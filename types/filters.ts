@@ -1,0 +1,1 @@
+export type filterType = {allias: string, type: string}
