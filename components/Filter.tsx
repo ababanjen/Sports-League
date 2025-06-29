@@ -26,8 +26,7 @@ const Filter: React.FC<{
   const handleSelectFilter = (value: filterType) => {
     setOpen(false);
     setSelected(value);
-    const listCopy = [...list];
-    const results = listCopy.filter((item) =>
+    const results = [...list].filter((item) =>
       value.allias === "all" ? item : item.status.type === value.type
     );
     setList(results);
