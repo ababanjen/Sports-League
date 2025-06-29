@@ -59,13 +59,13 @@ const BoardContainer: React.FC<boardTypes> = ({ sports }) => {
             </span>
           </div>
           <div className="w-full flex gap-2 justify-between items-center">
-            <span className="text-base max-w-[3rem] md:max-w-[unset] md:text-2xl md:w-[30rem] flex justify-center">
+            <span className="text-base max-w-[3rem] text-center md:max-w-[unset] md:text-2xl md:w-[30rem] flex justify-center">
               {team.homeTeam.name}
             </span>
             <div className="w-full flex justify-center">
               <CircularProgress status={team.liveStatus} />
             </div>
-            <span className="text-base  max-w-[3rem] md:max-w-[unset] md:text-2xl md:w-[30rem] flex justify-center ">
+            <span className="text-base  max-w-[3rem] md:max-w-[unset] md:text-2xl md:w-[30rem] flex justify-center text-center">
               {team.awayTeam.name}
             </span>
           </div>
