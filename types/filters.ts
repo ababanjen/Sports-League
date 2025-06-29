@@ -1,1 +1,1 @@
-export type filterType = {allias: string, type: string}
+export type filterType = {allias: string, type: string, cnt:number}

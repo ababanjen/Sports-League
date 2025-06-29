@@ -14,7 +14,7 @@ const MainContainer: React.FC<{ sports: sportTypes[] }> = ({ sports }) => {
         data-testid="filter-wrapper"
         className="sticky top-0 bg-black border-b-amber-600 border-b w-full z-10 shadow"
       >
-        <Filter list={sports} setList={setList} listCnt={list.length} />
+        <Filter list={sports} setList={setList} />
       </div>
       <BoardContainer sports={list} />
     </main>
