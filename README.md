@@ -8,8 +8,8 @@ A sports dashboard app built with Next.js 15, TypeScript, and tested using Jest 
 
 Install project dependencies:
 
-.env
-Create a .env file containing:
+#environment
+Create a .env file from the root folder containing:
 NEXT_PUBLIC_BASE_URL = 'http://localhost:3000'
 
 ```bash
