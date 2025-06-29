@@ -35,11 +35,11 @@ const Filter: React.FC<{
   const onBtnClick = () => setOpen((prev) => !prev);
 
   return (
-    <div className="rounded p-2 w-full" ref={dropdownRef}>
+    <div className=" p-2 w-full" ref={dropdownRef}>
       <div className="relative inline-block text-left w-full">
         <button
           onClick={onBtnClick}
-          className="capitalize rounded-md px-4 w-full py-2 text-sm md:text-xl shadow-sm hover:bg-amber-900"
+          className="capitalize px-4 w-full py-2 text-sm md:text-xl shadow-sm hover:bg-amber-900"
         >
           {selected.allias} {`(${selected.cnt})`}
           <ArrowDown
@@ -52,7 +52,7 @@ const Filter: React.FC<{
         {open && (
           <ul
             data-testid="dropdown-container"
-            className="absolute w-full z-10 mt-2 bg-white border border-gray-200 shadow-lg text-black"
+            className="rounded-b-md absolute w-full z-10 mt-2 bg-white border border-gray-200 shadow-lg text-black"
           >
             {filterList.map((filter: filterType, key: any) => (
               <li

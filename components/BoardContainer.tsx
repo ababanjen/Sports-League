@@ -24,7 +24,7 @@ const BoardContainer: React.FC<boardTypes> = ({ sports }) => {
       {sports.map((team: sportTypes) => (
         <div
           key={team.id}
-          className="bg-stone-600 w-[90%] md:w-[70%] p-[3rem]  gap-6 rounded justify-center md:p-12 flex flex-col "
+          className="bg-stone-600 w-[90%] md:w-[30rem] p-[3rem]  gap-6 rounded justify-center md:p-12 flex flex-col "
         >
           <div className="flex flex-col">
             <span
