@@ -8,12 +8,16 @@ A sports dashboard app built with Next.js 15, TypeScript, and tested using Jest 
 
 Install project dependencies:
 
+.env
+Create a .env file containing:
+NEXT_PUBLIC_BASE_URL = 'http://localhost:3000'
+
 ```bash
 npm install
 # or
 yarn
 
-npm run dev 
+npm run dev
 # or
 yarn dev
 
@@ -21,3 +25,4 @@ yarn dev
 npm test
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+```
