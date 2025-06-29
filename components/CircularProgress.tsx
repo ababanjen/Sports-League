@@ -1,4 +1,4 @@
-import { circularProgressTypes } from "@/types/circularProgress";
+import { circularProgressTypes } from "../types/circularProgress";
 
 const CircularProgress: React.FC<circularProgressTypes> = ({ status }) => {
   const isNumeric = (str: string): boolean => /\d/.test(str);
@@ -15,6 +15,7 @@ const CircularProgress: React.FC<circularProgressTypes> = ({ status }) => {
 
   return (
     <div
+      data-testid="game-progress"
       className="relative w-16 h-16 md:w-24 md:h-24 rounded-full"
       style={backgroundStyle}
     >

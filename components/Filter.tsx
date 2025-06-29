@@ -1,8 +1,8 @@
 "use client";
 import React from "react";
 import { filters } from "@/lib/constants";
-import { filterType } from "@/types/filters";
-import { sportTypes } from "@/types/sport";
+import { filterType } from "../types/filters";
+import { sportTypes } from "../types/sport";
 import { useRef, useState } from "react";
 import ArrowDown from "./icons/ArrowDown";
 import clsx from "clsx";
@@ -47,7 +47,9 @@ const Filter: React.FC<{
         </button>
 
         {open && (
-          <ul className="absolute w-full z-10 mt-2 bg-white border border-gray-200 shadow-lg text-black">
+          <ul
+          data-testid="dropdown-container"
+          className="absolute w-full z-10 mt-2 bg-white border border-gray-200 shadow-lg text-black">
             {filters.map((filter, key) => (
               <li
                 key={`${key}-${filter.allias}`}

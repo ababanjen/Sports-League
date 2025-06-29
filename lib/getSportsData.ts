@@ -1,4 +1,4 @@
-import { sportTypes } from '@/types/sport';
+import { sportTypes } from '../types/sport';
 
 export async function getSportsData(): Promise<sportTypes[]> {
   const baseUrl =
