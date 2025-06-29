@@ -9,7 +9,7 @@ const BoardContainer: React.FC<boardTypes> = ({ sports }) => {
   const getStatusType = (team: sportTypes) => {
     switch (team.status.type) {
       case "notstarted":
-        return { text: formatCustomDate(team.date), style: "" };
+        return { text: formatCustomDate(team.timestamp), style: "" };
       case "inprogress":
         return { text: "live", style: "text-yellow-500" };
       case "finished":
