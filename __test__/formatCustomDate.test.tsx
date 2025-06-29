@@ -1,7 +1,7 @@
 import { formatCustomDate } from '@/lib/formatCustomDate'
 
 describe('formatCustomDate', () => {
-  it('formats string date "06.08.2016." as "Aug 6th 00:00"', () => {
+  it('formats string date "06.08.2016." as "Aug 6th 08:00"', () => {
     expect(formatCustomDate("06.08.2016.")).toBe("Aug 6th 08:00")
   })
 
