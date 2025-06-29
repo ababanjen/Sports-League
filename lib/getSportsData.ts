@@ -1,15 +1,10 @@
-import { sportTypes } from '../types/sport';
+import data from "../public/data/sports.json";
 
-export async function getSportsData(): Promise<sportTypes[]> {
-  const baseUrl =
-    process.env.NEXT_PUBLIC_BASE_URL; // Fallback for local dev
-
-  const res = await fetch(`${baseUrl}/data/sports.json`);
-
-  if (!res.ok) {
-    throw new Error('Failed to fetch sport data');
-  }
-
-  const data: sportTypes[] = await res.json();
-  return data;
+export function getSportsData(): Promise<typeof data> {
+  //creating fake api call
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      resolve(data);
+    }, 500); // Simulate 500ms delay
+  });
 }
