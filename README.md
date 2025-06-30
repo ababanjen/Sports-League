@@ -21,4 +21,13 @@ yarn dev
 npm test
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+## Tech Stack
+
+- ⚛️ React
+- 🌐 Next.js 15
+- 🖌️ TailwindCss
+- 🧪 TypeScript
+
 ```
+
